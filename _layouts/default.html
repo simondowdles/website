@@ -5,15 +5,17 @@
 
   <body>
 
-    {% include header.html %}
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {% include header.html %}
+
+      {% include navigation.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+
     </div>
-
-    {% include footer.html %}
 
   </body>
 
